@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1990 12:00:00 GMT" />
+<title>Home</title>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+<link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Raleway|Roboto" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+	
+		
+	
+		$(document).ready(function() {
+		  $(".trigger").click(function() {
+			  
+			  if($("#subRotaterWrapper1").hasClass("subActive1") || $("#subRotaterWrapper2").hasClass(".subActive2") || $("#subRotaterWrapper3").hasClass(".subActive3"))
+				{
+					$("#subRotaterWrapper1").removeClass("subActive1");
+					$("#subRotaterWrapper2").removeClass("subActive2");
+					$("#subRotaterWrapper3").removeClass("subActive3");
+				}
+			  else if($("#subRotaterWrapper2").hasClass("subActive2") || $("#subRotaterWrapper1").hasClass(".subActive1") || $("#subRotaterWrapper3").hasClass(".subActive3"))
+				{
+					$("#subRotaterWrapper1").removeClass("subActive1");
+					$("#subRotaterWrapper2").removeClass("subActive2");
+					$("#subRotaterWrapper3").removeClass("subActive3");
+				}
+			  else if($("#subRotaterWrapper3").hasClass("subActive3") || $("#subRotaterWrapper1").hasClass(".subActive1") || $("#subRotaterWrapper2").hasClass(".subActive2"))
+				{
+					$("#subRotaterWrapper1").removeClass("subActive1");
+					$("#subRotaterWrapper2").removeClass("subActive2");
+					$("#subRotaterWrapper3").removeClass("subActive3");
+				}
+			$(".radial").toggleClass("radialActive");
+
+			  
+		  });
+		});
+	
+		$(document).ready(function() {
+		  $("#subTrigger1").click(function() {
+			$("#subRotaterWrapper1").toggleClass("subActive1");
+		  });
+		});
+	
+		$(document).ready(function() {
+		  $("#subTrigger2").click(function() {
+			$("#subRotaterWrapper2").toggleClass("subActive2");
+		  });
+		});
+	
+		$(document).ready(function() {
+		  $("#subTrigger3").click(function() {
+			$("#subRotaterWrapper3").toggleClass("subActive3");
+		  });
+		});
+
+		function openLearnMore() {
+			window.open("HomePage.html", "_self");
+		}
+		
+		function openThePage(pageId)
+		{
+			if(pageId == 1)
+				{
+					window.open("Startups & Entrepreneurs.html", "_blank");
+				}
+			else if(pageId == 2)
+				{
+					window.open("SMEs & Growing COs.html", "_blank");
+				}
+			else if(pageId == 3)
+				{
+					window.open("IPO Aspirants & Overseas Expansion.html", "_blank");
+				}
+			else
+				{
+					window.open("Listed COs & Mature COs.html", "_blank");
+				}
+		}
+		
+		window.addEventListener('load', function(){
+		  document.getElementById("overlay").style.display = 'none';
+		})
+
+</script>
+</head>
+
+<body class="m-element m-fadein">
+		
+		<div class="nav">
+
+					<div class="nav-wrapper">
+						<div class="menu">Menu<span class="menuIconHolder" onClick="toggleMenu()">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div></span>
+						</div>
+						<ul>
+							<li class="navlogo"><a href="index.html"><img src="Artboard 1.png"/></a></li>
+							<li><a href="AboutUs.html">About Us</a></li>
+							<li><a href="ContactPage.html">What We Do</a></li>
+							<li><a href="ContactPage.html">Articles</a></li>
+							<li><a href="ContactPage.html">Our Approach</a></li>
+							<li><a href="ContactPage.html">Contact Us</a></li>
+							<li><a href="ContactPage.html">Why Us</a></li>
+							<!--<li class="dropdown">
+								<a href="#buttons" class="dropbtn">Services <span>&#9660;</span></a>
+								<div class="dropdown-content">
+								  <a href="Startups & Entrepreneurs.html">Startups & Entrepreneurs</a>
+								  <a href="SMEs & Growing COs.html">SMEs & Growing COs</a>
+								  <a href="IPO Aspirants & Overseas Expansion.html">IPO Aspirants & Overseas Expansion</a>
+								  <a href="Listed COs & Mature COs.html">Listed COs & Mature COs</a>
+								</div>
+						    </li>-->
+						</ul>
+					</div>
+
+		</div>
+		
+	<div id="home-bkpic">
+		
+		<div id="overlay" class="m-element m-fadeout">
+			<div class="spinner"></div> 
+		</div>
+
+		<div class="intro">
+			<div class="container-double container-autoheight">
+				<div class="container-header" id="radial-menu-header">
+					<h1 id="whatwedo">What we do</h1>
+				</div>
+				<div id="radialMenuWrapper">
+					<div id="radialMenu">
+						<div class="radial">
+						  <div class="btn trigger">
+							  <span class="centerText">Virtual CFO</span>
+						  </div>
+						  <div class="icons">
+							<div class="rotater">
+							 <div class="btn btn-icon subTrigger" id="subTrigger1"><div class=""><i class="fa fa-codepen">Finance Advisor</i></div></div>
+							  <div class="btn-icon">
+								  <div class="subRotaterWrapper" id="subRotaterWrapper1">
+									<div class="subRotater">
+										<div class="subBtn">
+											<div class="subBtnBtn blue">
+												<span class="subBtnText">Financial Management</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn blue">
+												<span class="subBtnText">Tax Consultancy</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn blue">
+												<span class="subBtnText">Due Diligence</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn blue">
+												<span class="subBtnText">Accounting Support</span>
+											</div>
+										</div>
+									</div>
+								  </div>
+							  </div>
+							</div>
+							<div class="rotater">
+							  <div class="btn btn-icon subTrigger" id="subTrigger2"><div class=""><i class="fa fa-codepen">Business Advisor</i></div></div>
+							  	<div class="btn-icon">
+								  <div class="subRotaterWrapper" id="subRotaterWrapper2">
+									<div class="subRotater">
+										<div class="subBtn">
+											<div class="subBtnBtn darkBlue">
+												<span class="subBtnText">Internal Control Systems</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn darkBlue">
+												<span class="subBtnText">Performance Management</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn darkBlue">
+												<span class="subBtnText">Sustainability Reporting</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn darkBlue">
+												<span class="subBtnText">ERP Consultancy</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn darkBlue">
+												<span class="subBtnText">Internal Audit</span>
+											</div>
+										</div>
+									</div>
+								  </div>
+							  	</div>
+							  </div>
+						  	<div class="rotater">
+							 <div class="btn btn-icon subTrigger" id="subTrigger3"><div class=""><i class="fa fa-codepen">Strategic Advisor</i></div></div>
+							  	<div class="btn-icon">
+								  <div class="subRotaterWrapper" id="subRotaterWrapper3">
+									<div class="subRotater">
+										<div class="subBtn">
+											<div class="subBtnBtn darkerBlue">
+												<span class="subBtnText">Risk Management</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn darkerBlue">
+												<span class="subBtnText">IPO Consultancy</span>
+											</div>
+										</div>
+										<div class="subBtn">
+											<div class="subBtnBtn darkerBlue">
+												<span class="subBtnText">Business Improvement</span>
+											</div>
+										</div>
+									</div>
+								  </div>
+							  	</div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="methodology-text">
+				<div id="methodology-text-left" class="methodology-inner-text">
+                  <div class="container">
+					<div class="container-header"><h1>Why us?</h1></div>
+					<div class="methodology-inner-inner-text"><h3>Grayink is a business and management consultancy firm that specialises in providing Virtual CFO services. We provide the financial, business and strategic partnership to companies in order for them to meet their business objectives and support their growth. Grayink sees itself not as a service provider or an outsourced function but an extension of the companies’ business.</h3></div>
+                  </div>
+				</div>
+
+				<div id="methodology-text-right" class="methodology-inner-text">
+                  <div class="container">
+					<div class="container-header"><h1>Our vision</h1></div>
+					<div class="methodology-inner-inner-text"><h3>“Ensuring all companies have access to expert financial advice and support to help their business grow further”</h3></div>         
+                  </div>
+				</div>
+	</div>
+
+  <div class="footer">
+			Copyright &copy; 2016 Grayink Consulting <br>
+			All rights reserved
+			</div>
+
+	<script>
+	
+	function toggleMenu()
+	{		
+			$(".nav-wrapper ul").toggleClass("navShowing");
+		$(".intro").toggleClass("add10margintop");
+	}
+	
+	</script>
+	
+</body>
+</html>

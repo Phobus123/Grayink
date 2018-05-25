@@ -1,0 +1,2 @@
+[24-Jan-2017 06:54:39 UTC] PHP Fatal error:  Class 'SMTP' not found in /home/cheekin/PHPMailer-master/class.phpmailer.php on line 1466
+[24-Jan-2017 12:37:41 UTC] PHP Fatal error:  Cannot access protected property PHPMailer::$ReplyTo in /home/cheekin/public_html/ContactForm.php on line 40

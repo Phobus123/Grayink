@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Raleway|Roboto" rel="stylesheet">
+<title>Contact Us</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+		window.addEventListener('load', function(){
+		  document.getElementById("overlay").style.display = 'none';
+		})
+		
+		function checkForm()
+		{
+			var alertMessage = "Please enter: ";
+			var error = false;
+			var checkBoxesSelected = "";
+			
+			//Your information
+			var Title = document.getElementById("JobTitle").value;
+			var FirstName = document.getElementById("FirstName").value;
+			var LastName = document.getElementById("LastName").value;
+			var Company = document.getElementById("Company").value;
+			var Email = document.getElementById("Email").value;
+			var MobileNo = document.getElementById("Mobile No.").value;
+			var Country = document.getElementById("Country").value;
+			
+			//Checkboxes
+			var FinanceAdvisorOptionsSelected = [];
+			var BusinessAdvisorOptionsSelected = [];
+			var StrategicAdvisorOptionsSelected = [];
+			
+			$("input:checkbox[class=FA]:checked").each(function(){
+				FinanceAdvisorOptionsSelected.push($(this).val());
+			});
+			
+			$("input:checkbox[class=BA]:checked").each(function(){
+				BusinessAdvisorOptionsSelected.push($(this).val());
+			});
+			
+			$("input:checkbox[class=SA]:checked").each(function(){
+				StrategicAdvisorOptionsSelected.push($(this).val());
+			});
+			
+			//Check if Title is selected
+			if(Title == "Title")
+			{
+				alertMessage += "\na valid title";	
+				error = true;
+			}		
+			//Check if FirstName is blank
+			if(FirstName == "")
+			{
+				alertMessage += "\na first name ";
+				error = true;
+			}
+			//Check if LastName is blank
+			if(LastName == "")
+			{
+				alertMessage += "\na last name ";
+				error = true;
+			}
+			//Check if Company is blank
+			if(Company == "")
+			{
+				alertMessage += "\na company ";
+				error = true;
+			}
+			//Check if Email is blank
+			if(Email == "")
+			{
+				alertMessage += "\nan email address ";
+				error = true;
+			}
+			//Check if Mobile No. is blank
+			if(MobileNo == "")
+			{
+				alertMessage += "\na phone number ";
+				error = true;
+			}
+			//Check if Country is blank
+			if(Country == "")
+			{
+				alertMessage += "\na country ";
+				error = true;
+			}
+			
+			//Check if any checkboxes are empty
+			if(FinanceAdvisorOptionsSelected.length == 0 && BusinessAdvisorOptionsSelected.length == 0 && StrategicAdvisorOptionsSelected.length == 0)
+			{
+				alertMessage += "\nYou have not selected any of our services";
+				error = true;
+			}
+			
+			//Check if there is any error
+			if(error)
+			{
+				alert(alertMessage);
+				//Display the selected options for Finance Advisor
+				if(FinanceAdvisorOptionsSelected.length != 0)
+					alert("Finance Advisor: \n" + FinanceAdvisorOptionsSelected.join("\n") + 
+							"\nBusiness Advisor: \n" + BusinessAdvisorOptionsSelected.join("\n") + 
+								"\nStrategic Advisor: \n" + StrategicAdvisorOptionsSelected.join("\n"));
+
+				return false;
+			}
+			else
+			{
+				alert("No errors found");
+				return true;	
+			}
+			
+			
+		}
+		
+	</script>
+
+</head>
+
+<body class="m-element m-fadein">
+
+	<div>
+		<div id="mapContact">
+			<div class="nav">
+
+				<div class="nav-wrapper">
+					<div class="menu" onClick="toggleMenu()">Menu<span class="menuIconHolder">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div></span>
+					</div>
+					<ul>
+						<li  class="navlogo"><a href="HomePage.html"><img src="Artboard 1.png" alt="Company Logo"/></a></li>
+						<li><a href="HomePage.html">Home</a></li>
+						<li><a href="The Team.html">The Team</a></li>
+						<li class="active"><a href="ContactPage.html">Contact Us</a></li>
+					</ul>
+				</div>
+
+		</div>
+		
+		<div id="contactBannerPic">
+			<h1>We'd love to get to know you</h1>
+		</div>
+			
+			<div id="contact">
+			  <div class="container-double container-autoheight">
+
+					<!--<div id="mapContactHeader">
+						<h1>Let's keep in contact</h1>
+					</div>-->
+					
+					<div id="address-wrapper">
+						<div id="inputDiv">
+							<h1>Your information</h1>
+							<form action="ContactForm.php" method="post" id="contactForm" autocomplete="on" name="form" onSubmit="return checkForm()">
+								<div id="contactInfo">
+									<div class="contactInfoRow">
+										<select name="cars" id="JobTitle">
+											<option value="Title">Title</option>
+											<option value="Mr">Mr</option>
+											<option value="Ms">Ms</option>
+											<option value="Mrs">Mrs</option>
+											<option value="Mdm">Mdm</option>
+											<option value="Dr">Dr</option>
+											<option value="Prof">Prof</option>
+									    </select>
+									    <input type="text" class="input-p" placeholder="First Name" id="FirstName" name="FirstName" pattern=".{1,}">
+										<input type="text" class="input-p" placeholder="Last Name" id="LastName" name="LastName">
+									</div>
+									<div class="contactInfoRow">
+                                    	<input type="email" placeholder="Email" id="Email" name="Email">
+                                        <input type="tel" placeholder="Mobile No." id="Mobile No." name="MobileNo">
+									</div>
+									<div class="contactInfoRow">
+										<input type="text" placeholder="Company" id="Company" name="Company">
+										<input type="text" placeholder="Country" id="Country" name="Country">
+									</div>
+								</div>
+								<div class="requireText"><h1>Services you're interested in:</h1></div>
+								<div id="checkboxes-wrapper">
+									<div id="financeAdvisorCheckboxes">
+										<h2>Finance Advisor</h2>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="accountingSupport" value="Accounting Support"><h3>Accounting Support</h3></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="dueDiligence" value="Due Dilligence"><h3>Due Diligence</h3></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="taxConsultancy" value="Tax Consultancy"><h3>Tax Consultancy</h3></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="financialManagement" value="Financial Management"><h3>Financial Management</h3></div>
+									</div>
+									<div id="businessAdvisorCheckboxes">
+										<h2>Business Advisor</h2>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="internalControlSystems" value="Internal Control Systems"><h3>Internal Control Systems</h3></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="performanceManagement" value="Performance Management"><h3>Performance Management</h3></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="sustainabilityReporting" value="Sustainability Reporting"><h3>Sustainability Reporting</h3></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="erpConsultancy" value="ERP Consultancy"><h3>ERP Consultancy</h3></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="internalAudits" value="Internal Audits"><h3>Internal Audits</h3></div>
+									</div>
+									<div id="strategicAdvisorCheckboxes">
+										<h2>Strategic Advisor</h2>
+										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="businessImprovement" value="Business Improvement"><h3>Business Improvement</h3></div>
+										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="ipoConsultancy" value="IPO Consultancy"><h3>IPO Consultancy</h3></div>
+										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="riskManagement" value="Risk Management"><h3>Risk Management</h3></div>
+									</div>
+								</div>
+								<div id="hearAboutUs">
+									<h1>How did you hear about us?</h1>
+									<select name="hearAbout" id="hearAboutUsDropdownList">
+											<option value="Newspaper">Newspaper</option>
+											<option value="Social Media">Social Media</option>
+											<option value="Google">Google or other search</option>
+											<option value="WordOfMouth">Word of mouth</option>
+											<option value="Article">Article or blog post</option>
+											<option value="Referral">Referral</option>
+									</select>
+								</div>
+								<div id="comments">
+									<h1>Please include any other comments here</h1>
+									<div class="optionCheckbox"><textarea name="comment" form="contactForm" id="comment"></textarea></div>
+								</div>
+								<input type="submit" name="Submit" id="Submit" value="Submit">
+							</form>
+						</div>
+						
+						<!--<div id="address">
+							
+						</div>-->
+					</div>
+					
+					<!--<div class="map-wrapper container-centre">
+						<div id="map"></div>
+							<script>
+								var map;
+								var uluru = {lat: 1.299770, lng: 103.860491};
+
+							  function initMap() {
+								map = new google.maps.Map(document.getElementById('map'), {
+								  zoom: 16,
+								  center: uluru
+								});
+								var marker = new google.maps.Marker({
+								  position: uluru,
+								  map: map
+								});
+									google.maps.event.addDomListener(window, "resize", function() {
+									google.maps.event.trigger(map, "resize");
+									map.setCenter(uluru); 
+									});
+								}
+
+
+
+							</script>
+							<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsJTqO5rNXMT8vM4WQ2zvHezfGttELGvw&callback=initMap">
+							</script>
+
+					</div>-->
+              </div>
+			</div>
+	<div class="footer">
+			Copyright &copy; 2016 Grayink Consulting
+			All rights reserved
+		</div>
+		</div>
+	
+	</div>
+	
+	
+	
+	<div id="overlay" class="m-element m-fadeout">
+			<div class="spinner"></div> 
+		</div>
+	
+	<script>
+	
+	function toggleMenu()
+	{		
+			$(".nav-wrapper ul").toggleClass("navShowing");
+		$("#contactBannerPic").toggleClass("add10margintop");
+	}
+	
+	</script>
+</body>
+
+</html>
