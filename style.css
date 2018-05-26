@@ -1074,6 +1074,30 @@ input[type="checkbox"] {
 .darkerBlue {
   background: #0a0e32; }
 
+.rounded-corner{
+  border-radius: 10px;
+}
+
+.phase-area{
+  color: #2D4059;
+}
+
+.phase-area img{
+  width: 20%;
+}
+
+.padding-small{
+  padding: 5px;
+}
+
+.padding-medium{
+  padding: 10px;
+}
+
+.padding-large{
+  padding: 15px;
+}
+
 /*Sub 4 elements for Finance Advisor*/
 #subRotaterWrapper1 .subBtn:nth-child(1) {
   transform: rotate(22.5deg); }

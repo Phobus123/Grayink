@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About Us</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
 <link href="style.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Raleway|Roboto|Quicksand" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -42,24 +44,70 @@
 		<div class="spinner"></div> 
 	</div>
 
-	<header class="m-element m-fadein">	
-		
-		<div>
-			<a><img id="landingpagelogo" src="logobig.png"/></a>
+	<div class="nav">
+
+		<div class="nav-wrapper">
+			<div class="menu">Menu<span class="menuIconHolder" onClick="toggleMenu()">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div></span>
+			</div>
+			<ul class="menu align-center">
+				<li class="navlogo"><a href="index.html"><img src="Artboard 1.png"/></a></li>
+				<li class="active"><a href="">About Us</a></li>
+				<li><a href="WhatWeDo.html">What We Do</a></li>
+				<li><a href="Articles.html">Articles</a></li>
+				<li><a href="OurApproach.html">Our Approach</a></li>
+				<li><a href="ContactPage.html">Contact Us</a></li>
+				<li><a href="WhyUs.html">Why Us</a></li>
+				<!--<li class="dropdown">
+					<a href="#buttons" class="dropbtn">Services <span>&#9660;</span></a>
+					<div class="dropdown-content">
+					  <a href="Startups & Entrepreneurs.html">Startups & Entrepreneurs</a>
+					  <a href="SMEs & Growing COs.html">SMEs & Growing COs</a>
+					  <a href="IPO Aspirants & Overseas Expansion.html">IPO Aspirants & Overseas Expansion</a>
+					  <a href="Listed COs & Mature COs.html">Listed COs & Mature COs</a>
+					</div>
+				</li>-->
+			</ul>
 		</div>
-		
-		<h1>We're Grayink Consulting</h1>
-		
-		<h4>Business and Management Consultancy Firm<br>
-            Virtual CFO Partner<br>
-            Extension of Your Company</h4>
-		
-		<div id="learnMore_1">
-			<button id="learnMore" class="m-element m-learnMoreSizeIn" type="button" onClick="openLearnMore()" value="Learn more">Learn more</button>
-		</div>
-		
-	</header>
+	</div>
+
+	<div class="grid-container">
+		<div class="grid-x">
+			<div class="cell small-12 large-8 grid-container">
+					<h2 class="text-center">Our Story</h2>
 	
+					<p class="text-justify">The road of entrepreneurship is not without its bumps and obstacles.
+						But this venture is more than that of being an entrepreneur.
+						It was that of being able to transition into the next phase of our careers, leveraging on our skillsets and experiences.
+						And more importantly being able to play a part in the successes of our clients.</p>
+			
+					<p>We enjoy meeting and interacting with business owners from different industries. And when we are able to work with them and their management teams, it is a privilege. As iron sharpens iron, we hope that through the engagement, we are able to value-add through constructive inputs to our client's decision-making process.
+			
+					Our belief is that all of us are the sum of our experiences. And every experience and situation will inevitably shape us for future challenges. Grayink Consulting brings with us more than 40 years of combined experiences at multinationals and Singapore/Hong Kong listed companies.  
+					And we would like to share those accumulated experiences and skillsets with small and medium enterprises (SMEs) and start-ups across South East Asia as their Virtual CFO. </p>
+			</div>
+		</div>
+
+		<div class="grid-x">
+			<div class="cell small-12 large-8 grid-container grid-x">
+					<div class="small-12 large-8 card round-corner">
+							The Team
+					</div>
+					<div class="small-12 large-4 card round-corner">
+							Our Approach
+					</div>
+			</div>	
+		</div>
+
+		<div class="grid-x">
+			<div class="cell small-12 large-8 grid-container">
+				<h2 class="text-center">Our Clients</h2>
+			</div>	
+		</div>
+	</div>
+
 	<script>
 		
 	</script>
