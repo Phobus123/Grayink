@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
 <link href="style.css" rel="stylesheet" type="text/css">
-<link rel="shortcut icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+<link href="Artboard 1.png" rel="shortcut icon" sizes="16x16" type="image/png" />
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Raleway|Roboto" rel="stylesheet">
 <title>Contact Us</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -117,46 +119,57 @@
 			
 		}
 		
+		function toggleMenu()
+{		
+	$(".nav-wrapper ul").toggleClass("navShowing");
+$(".intro").toggleClass("add10margintop");
+}
+
 	</script>
 
 </head>
 
-<body class="m-element m-fadein">
+<body>
 
-	<div>
-		<div id="mapContact">
-			<div class="nav">
+		<div class="nav">
 
 				<div class="nav-wrapper">
-					<div class="menu" onClick="toggleMenu()">Menu<span class="menuIconHolder">
+					<div class="menu	"><p>Menu</p><span class="menuIconHolder" onClick="toggleMenu()">
 						<div class="bar1"></div>
 						<div class="bar2"></div>
 						<div class="bar3"></div></span>
 					</div>
-					<ul>
-						<li  class="navlogo"><a href="HomePage.html"><img src="Artboard 1.png" alt="Company Logo"/></a></li>
-						<li><a href="HomePage.html">Home</a></li>
-						<li><a href="The Team.html">The Team</a></li>
+					<ul class="menu align-center">
+						<li class="navlogo"><a href="index.html"><img src="Artboard 1.png"/></a></li>
+						<li><a href="AboutUs.html">About Us</a></li>
+						<li><a href="WhatWeDo.html">What We Do</a></li>
+						<li><a href="Articles.html">Articles</a></li>
+						<li><a href="OurApproach.html">Our Approach</a></li>
 						<li class="active"><a href="ContactPage.html">Contact Us</a></li>
+						<li><a href="WhyUs.html">Why Us</a></li>
+						<!--<li class="dropdown">
+							<a href="#buttons" class="dropbtn">Services <span>&#9660;</span></a>
+							<div class="dropdown-content">
+							  <a href="Startups & Entrepreneurs.html">Startups & Entrepreneurs</a>
+							  <a href="SMEs & Growing COs.html">SMEs & Growing COs</a>
+							  <a href="IPO Aspirants & Overseas Expansion.html">IPO Aspirants & Overseas Expansion</a>
+							  <a href="Listed COs & Mature COs.html">Listed COs & Mature COs</a>
+							</div>
+						</li>-->
 					</ul>
 				</div>
+			</div>
 
-		</div>
-		
+	<div>
 		<div id="contactBannerPic">
-			<h1>We'd love to get to know you</h1>
+			<h2>We'd love to get to know you</h2>
 		</div>
 			
 			<div id="contact">
-			  <div class="container-double container-autoheight">
-
-					<!--<div id="mapContactHeader">
-						<h1>Let's keep in contact</h1>
-					</div>-->
-					
-					<div id="address-wrapper">
+			  <div class="grid-container container-autoheight">
+					<div id="address-wrapper" class="margin-top-small margin-bottom-small">
 						<div id="inputDiv">
-							<h1>Your information</h1>
+							<h3>Your information</h3>
 							<form action="ContactForm.php" method="post" id="contactForm" autocomplete="on" name="form" onSubmit="return checkForm()">
 								<div id="contactInfo">
 									<div class="contactInfoRow">
@@ -181,32 +194,33 @@
 										<input type="text" placeholder="Country" id="Country" name="Country">
 									</div>
 								</div>
-								<div class="requireText"><h1>Services you're interested in:</h1></div>
+								<div class="requireText"><h3>Services you're interested in:</h3></div>
 								<div id="checkboxes-wrapper">
 									<div id="financeAdvisorCheckboxes">
-										<h2>Finance Advisor</h2>
-										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="accountingSupport" value="Accounting Support"><h3>Accounting Support</h3></div>
-										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="dueDiligence" value="Due Dilligence"><h3>Due Diligence</h3></div>
-										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="taxConsultancy" value="Tax Consultancy"><h3>Tax Consultancy</h3></div>
-										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="financialManagement" value="Financial Management"><h3>Financial Management</h3></div>
+										<h4>Finance Advisor</h4>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="accountingSupport" value="Accounting Support"><h5>Accounting Support</h5></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="dueDiligence" value="Due Dilligence"><h5>Due Diligence</h5></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="taxConsultancy" value="Tax Consultancy"><h5>Tax Consultancy</h5></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="financialManagement" value="Financial Management"><h5>Financial Management</h5></div>
+										<div class="optionCheckbox"><input class="FA" name="FinanceAdvisor[]" type="checkbox" id="corporateDebtFinancing" value="Corporate Debt Financing"><h5>Corporate Debt Financing</h5></div>
 									</div>
 									<div id="businessAdvisorCheckboxes">
-										<h2>Business Advisor</h2>
-										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="internalControlSystems" value="Internal Control Systems"><h3>Internal Control Systems</h3></div>
-										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="performanceManagement" value="Performance Management"><h3>Performance Management</h3></div>
-										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="sustainabilityReporting" value="Sustainability Reporting"><h3>Sustainability Reporting</h3></div>
-										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="erpConsultancy" value="ERP Consultancy"><h3>ERP Consultancy</h3></div>
-										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="internalAudits" value="Internal Audits"><h3>Internal Audits</h3></div>
+										<h4>Business Advisor</h4>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="internalControlSystems" value="Internal Control Systems"><h5>Internal Control Systems</h5></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="performanceManagement" value="Performance Management"><h5>Performance Management</h5></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="sustainabilityReporting" value="Sustainability Reporting"><h5>Sustainability Reporting</h5></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="erpConsultancy" value="ERP Consultancy"><h5>ERP Consultancy</h5></div>
+										<div class="optionCheckbox"><input class="BA" name="BusinessAdvisor[]" type="checkbox" id="internalAudits" value="Internal Audits"><h5>Internal Audits</h5></div>
 									</div>
 									<div id="strategicAdvisorCheckboxes">
-										<h2>Strategic Advisor</h2>
-										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="businessImprovement" value="Business Improvement"><h3>Business Improvement</h3></div>
-										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="ipoConsultancy" value="IPO Consultancy"><h3>IPO Consultancy</h3></div>
-										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="riskManagement" value="Risk Management"><h3>Risk Management</h3></div>
+										<h4>Strategic Advisor</h4>
+										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="businessImprovement" value="Business Improvement"><h5>Business Improvement</h5></div>
+										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="ipoConsultancy" value="IPO Consultancy"><h5>IPO Consultancy</h5></div>
+										<div class="optionCheckbox"><input class="SA" name="StrategicAdvisor" type="checkbox" id="riskManagement" value="Risk Management"><h5>Risk Management</h5></div>
 									</div>
 								</div>
 								<div id="hearAboutUs">
-									<h1>How did you hear about us?</h1>
+									<h3>How did you hear about us?</h3>
 									<select name="hearAbout" id="hearAboutUsDropdownList">
 											<option value="Newspaper">Newspaper</option>
 											<option value="Social Media">Social Media</option>
@@ -217,8 +231,8 @@
 									</select>
 								</div>
 								<div id="comments">
-									<h1>Please include any other comments here</h1>
-									<div class="optionCheckbox"><textarea name="comment" form="contactForm" id="comment"></textarea></div>
+									<h3>Please include any other comments here</h3>
+									<div><textarea name="comment" form="contactForm" id="comment"></textarea></div>
 								</div>
 								<input type="submit" name="Submit" id="Submit" value="Submit">
 							</form>
@@ -261,8 +275,8 @@
               </div>
 			</div>
 	<div class="footer">
-			Copyright &copy; 2016 Grayink Consulting
-			All rights reserved
+			<p>Copyright &copy; 2018 Grayink Consulting
+					All rights reserved</p>
 		</div>
 		</div>
 	

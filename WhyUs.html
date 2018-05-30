@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Articles</title>
+<title>Why Us</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
 <link href="style.css" rel="stylesheet" type="text/css">
@@ -19,11 +19,12 @@
 		window.addEventListener('load', function(){
 		  document.getElementById("overlay").style.display = 'none';
 		})
+
         function toggleMenu()
-	{		
-			$(".nav-wrapper ul").toggleClass("navShowing");
-		$("#contactBannerPic").toggleClass("add10margintop");
-	}
+        {		
+                $(".nav-wrapper ul").toggleClass("navShowing");
+            $("#contactBannerPic").toggleClass("add10margintop");
+        }
 
 	</script>
 </head>
@@ -37,14 +38,14 @@
                 <div class="bar2"></div>
                 <div class="bar3"></div></span>
             </div>
-            <ul>
+            <ul class="menu align-center">
                 <li class="navlogo"><a href="index.html"><img src="Artboard 1.png"/></a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="WhatWeDo.html">What We Do</a></li>
-                <li class="active"><a href="">Articles</a></li>
+                <li><a href="Articles.html">Articles</a></li>
                 <li><a href="OurApproach.html">Our Approach</a></li>
                 <li><a href="ContactPage.html">Contact Us</a></li>
-                <li><a href="WhyUs.html">Why Us</a></li>
+                <li class="active"><a href="WhyUs.html">Why Us</a></li>
                 <!--<li class="dropdown">
                     <a href="#buttons" class="dropbtn">Services <span>&#9660;</span></a>
                     <div class="dropdown-content">
@@ -57,23 +58,38 @@
             </ul>
         </div>
     </div>
-
+    
     <div class="grid-container">
-            <div class="grid-x grid-container grid-margin-x margin-top-small">
-                <div class="small-12 large-12 grid-container">
-                    <h2 class="">Articles</h2>
-                    <div class="separator"></div>
-                </div>
+            <div class="grid-x grid-margin-x grid-container margin-top-small">
+            <div>
+                    <div>
+                        <div>
+                        <div><h2>Why us?</h2></div>
+                        <div class="separator"></div>
+                        <div><p>Grayink is a business and management consultancy firm that specialises in providing Virtual CFO services. 
+                            We provide the financial, business and strategic partnership to companies in order for them to meet their business objectives and 
+                            support their growth. Grayink sees itself not as a service provider or an outsourced function but an extension of the companies’ business.</p></div>
+                        </div>
+                    </div>
+                    
+                    <div class="margin-top-small">
+                        <div>
+                            <div><h2>Our vision</h1></div>
+                            <div class="separator"></div>
+                        <div class=""><p>“Ensuring all companies have access to expert financial advice and support to help their business grow further”</p></div>         
+                        </div>
+                    </div>
+                    <div class="phase-area grid-x">
+                        <img class="small-6" src="presentation.svg"/>
+                        <img class="small-6" src="social-care.svg"/>
+                    </div>
             </div>
+        </div>
     </div>
     <div class="footer">
-            <p>Copyright &copy; 2018 Grayink Consulting
-                    All rights reserved</p>
-        </div>
-	<script>
-		
-	</script>
-	
+        <p>Copyright &copy; 2018 Grayink Consulting
+                All rights reserved</p>
+    </div>
 
 </body>
 </html>

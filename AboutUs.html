@@ -7,10 +7,13 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/css/foundation.min.css" integrity="sha256-GSio8qamaXapM8Fq9JYdGNTvk/dgs+cMLgPeevOYEx0= sha384-wAweiGTn38CY2DSwAaEffed6iMeflc0FMiuptanbN4J+ib+342gKGpvYRWubPd/+ sha512-QHEb6jOC8SaGTmYmGU19u2FhIfeG+t/hSacIWPpDzOp5yygnthL3JwnilM7LM1dOAbJv62R+/FICfsrKUqv4Gg==" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.4.3/dist/js/foundation.min.js" integrity="sha256-mRYlCu5EG+ouD07WxLF8v4ZAZYCA6WrmdIXyn1Bv9Vk= sha384-KzKofw4qqetd3kvuQ5AdapWPqV1ZI+CnfyfEwZQgPk8poOLWaabfgJOfmW7uI+AV sha512-0gHfaMkY+Do568TgjJC2iMAV0dQlY4NqbeZ4pr9lVUTXQzKu8qceyd6wg/3Uql9qA2+3X5NHv3IMb05wb387rA==" crossorigin="anonymous"></script>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link href="Artboard 1.png" rel="shortcut icon" sizes="16x16" type="image/png" />
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Nunito|Raleway|Roboto|Quicksand" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script>
 		
+		
+
 		function openThePage(pageId)
 		{
 			if(pageId == 1)
@@ -35,6 +38,14 @@
 		  document.getElementById("overlay").style.display = 'none';
 		})
 
+		function ourApproachCard(){
+			window.open("OurApproach.html", "_self");
+		}
+
+		function whatWeDoCard(){
+			window.open("WhatWeDo.html", "_self");
+		}
+
 	</script>
 </head>
 
@@ -47,7 +58,7 @@
 	<div class="nav">
 
 		<div class="nav-wrapper">
-			<div class="menu">Menu<span class="menuIconHolder" onClick="toggleMenu()">
+			<div class="menu"><p>Menu</p><span class="menuIconHolder" onClick="toggleMenu()">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div></span>
@@ -74,44 +85,121 @@
 	</div>
 
 	<div class="grid-container">
-		<div class="grid-x">
-			<div class="cell small-12 large-8 grid-container">
-					<h2 class="text-center">Our Story</h2>
-	
-					<p class="text-justify">The road of entrepreneurship is not without its bumps and obstacles.
+		<div class="grid-x grid-margin-x grid-container margin-top-small">
+			<div class="small-12 large-12 grid-container">
+					<h2>Our Story</h2>
+					<div class="separator"></div>
+					<p>The road of entrepreneurship is not without its bumps and obstacles.
 						But this venture is more than that of being an entrepreneur.
 						It was that of being able to transition into the next phase of our careers, leveraging on our skillsets and experiences.
 						And more importantly being able to play a part in the successes of our clients.</p>
 			
 					<p>We enjoy meeting and interacting with business owners from different industries. And when we are able to work with them and their management teams, it is a privilege. As iron sharpens iron, we hope that through the engagement, we are able to value-add through constructive inputs to our client's decision-making process.
 			
-					Our belief is that all of us are the sum of our experiences. And every experience and situation will inevitably shape us for future challenges. Grayink Consulting brings with us more than 40 years of combined experiences at multinationals and Singapore/Hong Kong listed companies.  
+					<p>Our belief is that all of us are the sum of our experiences. 
+						And every experience and situation will inevitably shape us for future challenges. </p>
+					
+					<p>Grayink Consulting brings with us more than 40 years of combined experiences at multinationals and Singapore/Hong Kong listed companies.  
 					And we would like to share those accumulated experiences and skillsets with small and medium enterprises (SMEs) and start-ups across South East Asia as their Virtual CFO. </p>
 			</div>
 		</div>
 
-		<div class="grid-x">
-			<div class="cell small-12 large-8 grid-container grid-x">
-					<div class="small-12 large-8 card round-corner">
-							The Team
+		<div class="grid-x grid-margin-x grid-container">
+			<div class="small-12 large-12 grid-container grid-x">
+					<div class="small-12 large-8 card round-corner custom-card height-small" id="whatWeDoCard" onclick="whatWeDoCard()">
+							<h3>WHAT WE DO</h3>
 					</div>
-					<div class="small-12 large-4 card round-corner">
-							Our Approach
+					<div class="small-12 large-4 card round-corner custom-card height-small" id="ourApproachCard" onclick="ourApproachCard()">
+							<h3>OUR APPROACH</h3>
 					</div>
 			</div>	
+			
 		</div>
-
-		<div class="grid-x">
-			<div class="cell small-12 large-8 grid-container">
-				<h2 class="text-center">Our Clients</h2>
+		
+		<div class="grid-x grid-margin-x grid-container">
+			<div class="cell small-12 large-12 grid-container margin-top-small">
+				<h2>The Team</h2>
+				<div class="separator"></div>
+				<div id="TT-bkpic">
+						
+						
+						<div class="grid-x" id="team">
+						
+						<div class="large-6 margin-top-small">
+						<div class="name">
+						<h3>GARY SNG</h3>
+						</div>
+						
+						<div class="description">
+						<div class="inner">
+						<div>
+						<p>Gary Sng has more than 20 years of Accounting and Finance experience, working with government and global MNCs. Starting off his career with KPMG, he has worked with the Ministry of Finance as well as European MNCs like SCA Packaging.<br />
+						<br />
+						He was based in Copenhagen, Denmark for about 6 years with a global aviation MRO company where he had to set up and lead an entire Finance team of about 25 people. He has also worked with US MNCs like Sungard and Covance, one of the biggest IT Systems company and Pharmaceutical CRO respectively.<br />
+						<br />
+						Gary specialises in setting up entire Finance Teams from ground zero and developing processes and controls to complement the business environment. He also assists companies with their ERP implementation and marries the business process with the accounting environment. Gary also has extensive experience assisting companies that are looking to implement shared services within their organisation.<br />
+						<br />
+						Gary is a Chartered Accountant of the Institute of Singapore Chartered Accountants. He is also a Certified Internal Auditor (CIA) of the Institute of Internal Auditors and a Professional Singapore Certified Management Consultants (PSCMC) of TUV-SUD Singapore.</p>
+						</div>
+						</div>
+						<!--<div class="inner">
+													<h1>Qualifications</h1>
+													
+													<div class="inner-text">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt eos nisi sapiente vel quibusdam provident, ipsam magni. Aliquam exercitationem minus eum, impedit repellendus ipsum minima quia obcaecati fugit velit esse culpa qui, eos officiis voluptatibus, explicabo nesciunt aut. Natus facilis voluptas sed nemo ea fugit voluptatem doloribus repellendus facere.</p>
+													</div>
+												</div>--></div>
+						</div>
+						
+						<div class="large-6 margin-top-small">
+						<div class="name">
+						<h3>ALAN CHAN</h3>
+						</div>
+						
+						<div class="description">
+						<div class="inner">
+						<div>
+						<p>Alan Chan has extensive hands-on experience and a track record of successful accomplishments in managing company finances, enhancing internal controls and risk management frameworks and working in coordination with boards of directors to improve corporate governance practices.<br />
+						<br />
+						Over the years, he has initiated and implemented enhancements and improvements to business and finance processes in the organisations that he worked at. He also worked on several successful Initial Public Offering exercises on both the Singapore and Hong Kong Stock Exchanges.<br />
+						<br />
+						With his more than 16 years of experience, he has taken on various finance and investment roles in both the public and private sectors. He was previously the CFO of a company that is listed on both the Singapore and Hong Kong exchanges.<br />
+						<br />
+						Alan is a Chartered Accountant of the Institute of Singapore Chartered Accountants.&nbsp;He is also a Certified Internal Auditor (CIA) of the Institute of Internal Auditors and a Professional Singapore Certified Management Consultants (PSCMC) of TUV-SUD Singapore.</p>
+						</div>
+						</div>
+						<!--<div class="inner">
+													<h1>Qualifications</h1>
+													
+													<div class="inner-text">
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam sunt eos nisi sapiente vel quibusdam provident, ipsam magni. Aliquam exercitationem minus eum, impedit repellendus ipsum minima quia obcaecati fugit velit esse culpa qui, eos officiis voluptatibus, explicabo nesciunt aut. Natus facilis voluptas sed nemo ea fugit voluptatem doloribus repellendus facere.</p>
+													</div>
+												</div>--></div>
+						</div>
+						</div>
 			</div>	
 		</div>
 	</div>
+	</div>
 
-	<script>
-		
-	</script>
 	
+
+	<div class="footer">
+	<p>Copyright &copy; 2018 Grayink Consulting <br>
+		All rights reserved</p>
+	</div>
+
+<script>
+
+function toggleMenu()
+{		
+	$(".nav-wrapper ul").toggleClass("navShowing");
+$(".intro").toggleClass("add10margintop");
+}
+
+</script>
+
+</body>
 
 </body>
 </html>

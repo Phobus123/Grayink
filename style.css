@@ -8,7 +8,8 @@
 html, body {
   height: auto;
   margin: 0;
-  border: 0; }
+  border: 0; 
+  background: rgba(0,0,0, 0.025)}
 
 header {
   background-image: url(architecture-839362_1920.jpg);
@@ -18,7 +19,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: Roboto, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family: Gotham, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   color: #5E5E5E;
   text-align: center; }
 
@@ -32,7 +33,7 @@ header h4 {
   max-width: 800px;
   margin: 0;
   margin-top: 5em;
-  font-family: Roboto, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family: Gotham, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 1.5em; }
 
@@ -41,15 +42,18 @@ input {
   width: 50%;
   height: auto;
   font-size: 1.25em;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important;
+  font-weight: 300 !important;
   padding: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 5px; }
 
 input[type="submit"] {
-  width: 50%;
-  cursor: pointer; }
+  align-self: flex-end;
+  width: 25%;
+  cursor: pointer;
+  border-radius: 10px;}
 
 #landingpagelogo {
   width: 250px; }
@@ -109,7 +113,7 @@ input[type="submit"] {
 .nav {
   width: auto;
   height: 70px;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   font-weight: 100;
   background: rgba(0, 0, 0, 0.25);
   font-size: 18px;
@@ -188,8 +192,11 @@ input[type="submit"] {
 
 .navlogo {
   background: rgba(255, 255, 255, 0.5);
-  margin-left: 5px;
-  margin-right: 100px; }
+  margin-left: 5px; }
+
+.navlogo a{
+  padding: 0px;
+}
 
 .navlogo:hover {
   transition: all 0.45s;
@@ -206,10 +213,13 @@ input[type="submit"] {
   opacity: 1;
   text-decoration: underline; }
 
-.active {
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.25); }
+.active a{
+  background: none !important;
+  } 
 
+.active {
+    background: rgba(0, 0, 0, 0.25) !important; }
+    
 .menu {
   width: 100%;
   text-align: left;
@@ -222,7 +232,7 @@ input[type="submit"] {
 .menuIconHolder {
   position: absolute;
   right: 15px;
-  top: 15px; }
+  top: 10px; }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
@@ -278,7 +288,7 @@ input[type="submit"] {
   align-items: center; }
 
 .container-header { 
-  font-family: Roboto Light, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham Light, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   text-align: center;
   margin-top: 20px;
   margin-bottom: 5px;
@@ -326,7 +336,7 @@ input[type="submit"] {
 #theteam-header {
   font-size: 2em;
   text-align: center;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   color: white;
   margin-top: 5% }
 
@@ -335,7 +345,7 @@ input[type="submit"] {
   color: white; }
 
 .name h1 {
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   font-size: 1.5em; }
 
 .person-image {
@@ -346,7 +356,7 @@ input[type="submit"] {
   flex-direction: row;
   align-items: center;
   color: white;
-  font-family: Roboto, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
+  font-family: Gotham, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; }
 
 .inner {
   width: 1000%;
@@ -514,9 +524,9 @@ input[type="submit"] {
   justify-content: center;
   align-items: center; }
 
-#contactBannerPic h1 {
+#contactBannerPic h2 {
   text-align: center;
-  font-family: Roboto Light, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham Light, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   color: rgba(255, 255, 255, 0.75); }
 
 #mapContactHeader {
@@ -532,9 +542,7 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
-  padding-right: 5px; 
-  padding: 10%;}
+  justify-content: flex-start;  }
 
 #contactForm {
   width: 100%;
@@ -558,11 +566,11 @@ input[type="submit"] {
 
 #inputDiv h1, #inputDiv h2
 {
-	font-family: Roboto Light, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-family: Gotham Light, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 }
 
 #inputDiv h3 {
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   font-weight: 100; }
 
 #message {
@@ -572,7 +580,7 @@ input[type="submit"] {
 .requireText {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
 
 #checkboxes-wrapper {
   display: flex;
@@ -601,23 +609,27 @@ input[type="checkbox"] {
   margin-bottom: 5px; }
 
 .optionCheckbox h2 {
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   font-size: 16px; }
 
 #JobTitle {
-  width: 7.5%;
-  height: auto;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  width: auto;
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-weight: 300;
   font-size: 16px;
-  padding-left: 1px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px; }
+  padding-left: 1.5px; }
+
+#JobTitle option {
+  width: auto;
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-weight: 300;
+  font-size: 16px;
+  padding-left: 1.5px; }
 
 #FirstName {
   width: 42.25%; }
 
-#submit:hover {
+#Submit:hover {
   opacity: 0.5;
   transition: opacity 0.5s;
   cursor: pointer; }
@@ -625,17 +637,22 @@ input[type="checkbox"] {
 #hearAboutUsDropdownList {
   width: 50%;
   height: auto;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important;
+  font-weight: 300;
   font-size: 16px;
   padding-left: 1px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 5px; }
 
+#hearAboutUsDropdownList option{
+  font-weight: 300;
+}
+
 #comment {
   width: 100%;
   padding: 1px;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   font-size: 16px; }
 
 #comments {
@@ -643,13 +660,13 @@ input[type="checkbox"] {
 
 #address {
   width: 45%;
-  font-family: Roboto,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   padding-left: 5px;
   }
   
 #address h1, h2, h3
 {
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   font-weight: 100;
 }
 
@@ -688,13 +705,13 @@ input[type="checkbox"] {
   width: 100%; }
 
 .imageLink h2 {
-  font-family: Roboto,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   text-align: center;
   color: rgba(255, 255, 255, 0.75);
   margin-bottom: 5px; }
 
 .imageLinkText {
-  font-family: Roboto,Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
   color: white;
   padding: 5px; }
 
@@ -734,7 +751,7 @@ input[type="checkbox"] {
   margin-bottom: 20px;
   height: 100%;
   color: #2D4059; 
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";}
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";}
 
 .methodology-point-text{
 	margin-left: 20px;
@@ -772,7 +789,7 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
-  font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
 
 .methodology-inner-inner-text {
   width: 100%;
@@ -785,7 +802,7 @@ input[type="checkbox"] {
   }
 
 .methodology-inner-text h1 {
-  font-family: Roboto Light, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
+  font-family: Gotham Light, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
 
 .spinner {
   width: 80px;
@@ -802,13 +819,13 @@ input[type="checkbox"] {
   animation: spin 0.75s infinite linear; }
 
 .sub-footer{
-  height: 300px;
+  height: auto;
   width: 100%;
   background: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-family: Roboto, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-family: Gotham, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   }
 
   .sub-footer-wrapper
@@ -829,7 +846,7 @@ input[type="checkbox"] {
   .sub-footer-sub h1
   {
 	  margin-bottom:5px;
-	  font-family: Roboto Light, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	  font-family: Gotham Light, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
   }
 
   .sub-footer-sub ul li
@@ -844,12 +861,15 @@ input[type="checkbox"] {
   }
 
 .footer {
-  height: 50px;
+  height: auto;
   width: 100%;
   padding: 5px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;}
+
+.footer p {
+    margin-bottom: 0px !important;}
 
 @keyframes spin {
   from {
@@ -907,7 +927,7 @@ input[type="checkbox"] {
   width: 10em;
   height: 10em; }
   .radial .centerText {
-    font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+    font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
     font-size: 30px;
     transition: color 1s;
     text-align: center; }
@@ -931,7 +951,7 @@ input[type="checkbox"] {
       font-size: 1.5em;
       transition: color 0.5s;
       z-index: 100;
-      font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+      font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
       font-style: normal;
       text-align: center; }
     .radial .btn.trigger {
@@ -1051,7 +1071,8 @@ input[type="checkbox"] {
       transition: opacity 1s, z-index 0.3s, transform 1s; }
       .subRotaterWrapper .subRotater .subBtnBtn .subBtnText {
         color: white;
-        font-family: Roboto, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif"; }
+        font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+        font-weight: 300; }
   .subRotaterWrapper.subActive1 .subBtn {
     opacity: 1 !important; }
   .subRotaterWrapper.subActive1 .subBtnBtn {
@@ -1078,16 +1099,130 @@ input[type="checkbox"] {
   border-radius: 10px;
 }
 
-.phase-area{
+.margin-top-small{
+  margin-top: 5em;
+}
+
+.margin-bottom-small{
+  margin-bottom: 5em;
+}
+
+.separator{
+  content: "";
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-bottom: 1.5px solid rgba(0,0,0,0.20);
+  width: 50%;
+}
+
+#ourApproachCard{
+  background-color: #2D4059;
+  color: white;
+  cursor: pointer;
+  font-family: Gotham SemiBold, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  background: url("aircraft-2260735_1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#whatWeDoCard{
+  background-color: #2D4059;
+  color: white;
+  cursor: pointer;
+  font-family: Gotham SemiBold, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  background: url("business-1209705_1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+h1{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important; 
+  font-weight: bolder !important;
+}
+
+h2{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important; 
+  font-weight: 400 !important;
+}
+
+h3{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important; 
+  font-weight: 400 !important;
+}
+
+h4{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important; 
+  font-weight: 400 !important;
+}
+
+h5{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important; 
+  font-weight: 300 !important;
+}
+
+h6{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif" !important; 
+  font-weight: 300 !important;
+}
+
+p{
+  font-family: Gotham, Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+  font-weight: 300;
+}
+
+#ourApproach:hover{
+  background-color: rgba(45, 64, 89, 0.8);
+}
+
+.custom-card{
+  text-align: center;
+}
+
+.custom-card:hover{
+  opacity: 0.5;
+}
+
+.custom-card h3{
+  line-height: 10em;
+}
+
+.height-small{
+  height: 10em;
+}
+
+.height-medium{
+  height: 20em;
+}
+
+.height-large{
+  height: 30em;
+}
+
+.progress-arrow{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.progress-arrow img{
+  width: 10%;
+  
+}
+
+.phase-area {
   color: #2D4059;
+  flex-direction: row !important;
 }
 
 .phase-area img{
-  width: 20%;
+  width: 25% !important;
+}
+
+.phase-area-inner{
 }
 
 .padding-small{
-  padding: 5px;
+  padding: 2.5%;
 }
 
 .padding-medium{
@@ -1137,6 +1272,16 @@ input[type="checkbox"] {
 
 .subActive1 .subBtn:nth-child(4) .subBtnBtn {
   transform: translateY(-15em) rotate(112.5deg);
+  transition-delay: 0.5s; }
+
+#subRotaterWrapper1 .subBtn:nth-child(5) {
+  transform: rotate(-157.5deg); }
+
+#subRotaterWrapper1 .subBtn:nth-child(5) .subBtnBtn {
+  transition-delay: 0.75s; }
+
+.subActive1 .subBtn:nth-child(5) .subBtnBtn {
+  transform: translateY(-15em) rotate(157.5deg);
   transition-delay: 0.5s; }
 
 /*Sub 5 elements for Business Advisor*/
@@ -1192,33 +1337,53 @@ input[type="checkbox"] {
 
 /*Sub 3 elements for Strategic Advisor*/
 #subRotaterWrapper3 .subBtn:nth-child(1) {
-  transform: rotate(120deg); }
+  transform: rotate(22.5deg); }
 
 #subRotaterWrapper3 .subBtn:nth-child(1) .subBtnBtn {
   transition-delay: 0s; }
 
 .subActive3 .subBtn:nth-child(1) .subBtnBtn {
-  transform: translateX(-3.75em) translateY(-15em) rotate(-120deg);
+  transform: translateY(-10em) rotate(-22.5deg) translateX(-15em);
   transition-delay: 0.5s; }
 
 #subRotaterWrapper3 .subBtn:nth-child(2) {
-  transform: rotate(180deg); }
+  transform: rotate(-22.5deg); }
 
 #subRotaterWrapper3 .subBtn:nth-child(2) .subBtnBtn {
   transition-delay: 0.25s; }
 
 .subActive3 .subBtn:nth-child(2) .subBtnBtn {
-  transform: translateX(-3.75em) translateY(-15em) rotate(-180deg);
+  transform: translateY(2em) rotate(22.5deg) translateX(-15em);
   transition-delay: 0.5s; }
 
 #subRotaterWrapper3 .subBtn:nth-child(3) {
-  transform: rotate(240deg); }
+  transform: rotate(-67.5deg); }
 
 #subRotaterWrapper3 .subBtn:nth-child(3) .subBtnBtn {
   transition-delay: 0.5s; }
 
 .subActive3 .subBtn:nth-child(3) .subBtnBtn {
-  transform: translateX(-3.75em) translateY(-15em) rotate(-240deg);
+  transform: translateY(30em) rotate(67.5deg) translateX(-34em);
+  transition-delay: 0.5s; }
+
+#subRotaterWrapper3 .subBtn:nth-child(4) {
+  transform: rotate(-112.5deg); }
+
+#subRotaterWrapper3 .subBtn:nth-child(4) .subBtnBtn {
+  transition-delay: 0.75s; }
+
+.subActive3 .subBtn:nth-child(4) .subBtnBtn {
+  transform: translateY(-28em) rotate(112.5deg) translateX(32em);
+  transition-delay: 0.5s; }
+
+#subRotaterWrapper3 .subBtn:nth-child(5) {
+  transform: rotate(-157.5deg); }
+
+#subRotaterWrapper3 .subBtn:nth-child(5) .subBtnBtn {
+  transition-delay: 0.75s; }
+
+.subActive3 .subBtn:nth-child(5) .subBtnBtn {
+  transform: translateY(-2em) rotate(157.5deg) translateX(12em);
   transition-delay: 0.5s; }
 
 /*rotate($deg/2 - $deg * ($i - 1));*/
@@ -1241,6 +1406,76 @@ input[type="checkbox"] {
     left: auto; }
   100% {
     left: 100%; } }
+@media screen and (max-width: 1200px) {
+  header {
+    align-content: center;
+    justify-content: center; }
+
+  #whatwedo
+  {
+	  color:white;
+  }
+
+  #landingPageLogo {
+    width: 50%; }
+
+  .menu {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+
+  .menu p{
+    position: relative;
+    top: 4px;
+  }
+
+  .nav {
+    width: 100%;
+    display: inline-block; }
+
+  .navlogo {
+    display: none !important; }
+
+  .nav-wrapper ul {
+    display: none; }
+
+  .navShowing {
+    display: block !important;
+    margin-top: 5px !important;
+    margin-bottom: 10px !important; }
+
+  .add10margintop {
+    margin-top: 0.4em; }
+
+  .nav-wrapper ul li {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.8); }
+
+  .nav-wrapper {
+    height: 100%; }
+
+  .nav-wrapper a {
+    display: block;
+    padding: 0;
+    width: inherit;
+    height: inherit; }
+
+  .nav-wrapper a {
+    text-align: left; }
+
+  .dropdown-content {
+    width: 100%; }
+
+  .dropdown-content a {
+    padding: 10px; }
+
+  #landingpagelogo
+  {
+	  width: 30%;
+  }
+}
 /*Media queries for 1024px and below*/
 @media screen and (max-width: 1024px) {
 	
@@ -1260,6 +1495,13 @@ input[type="checkbox"] {
 
   h4 {
     font-size: 75% !important; }
+
+  h5 {
+    font-size: 70% !important; }
+
+  p{
+    font-size: 75% !important;
+  }
 
   header {
     align-content: center;
@@ -1294,13 +1536,13 @@ input[type="checkbox"] {
     margin-bottom: 10px !important; }
 
   .add10margintop {
-    margin-top: 10px; }
+    margin-top: 0.4em; }
 
   .nav-wrapper ul li {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
-    background: rgba(21, 49, 85, 0.8); }
+    background: rgba(0, 0, 0, 0.8); }
 
   .nav-wrapper {
     height: 100%; }
@@ -1324,6 +1566,23 @@ input[type="checkbox"] {
   {
 	  width: 30%;
   }
+
+  .phase-area img{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .phase-area-inner{
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  input[type="submit"] {
+    align-self: flex-end;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+  margin-top: 2em;}
 
   #learnMore {
     margin-top: 40px;
@@ -1373,8 +1632,7 @@ input[type="checkbox"] {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	padding-right: 5px;
-	padding: 5% 6% 5% 5%; }
+	  padding-right: 5px;}
 
   #contactBannerPic {
     height: 25vh; }
@@ -1395,9 +1653,12 @@ input[type="checkbox"] {
     width: 100%;
     padding-left: 5px; }
 
+  .menu.active a{
+    background: none !important;
+  } 
+
   .active {
-    border-radius: 0px;
-    background: rgba(255, 255, 255, 0.1); }
+    background: rgba(0, 0, 0, 0.25) !important; }
 
   #radialMenuWrapper {
     height: 80vh; }
@@ -1490,6 +1751,16 @@ input[type="checkbox"] {
     transform: translateY(-10em) rotate(112.5deg) translateX(0em);
     transition-delay: 0.5s; }
 
+  #subRotaterWrapper1 .subBtn:nth-child(5) {
+    transform: rotate(-157.5deg); }
+
+  #subRotaterWrapper1 .subBtn:nth-child(5) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive1 .subBtn:nth-child(5) .subBtnBtn {
+    transform: translateY(-10em) rotate(157.5deg) translateX(0em);
+    transition-delay: 0.5s; }
+
   /*Sub 5 elements for Business Advisor*/
   #subRotaterWrapper2 .subBtn:nth-child(1) {
     transform: rotate(-18deg); }
@@ -1543,33 +1814,53 @@ input[type="checkbox"] {
 
   /*Sub 3 elements for Strategic Advisor*/
   #subRotaterWrapper3 .subBtn:nth-child(1) {
-    transform: rotate(120deg); }
+    transform: rotate(22.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(1) .subBtnBtn {
     transition-delay: 0s; }
 
   .subActive3 .subBtn:nth-child(1) .subBtnBtn {
-    transform: translateX(-2.75em) translateY(-12.5em) rotate(-120deg);
+    transform: translateY(-8em) rotate(-22.5deg) translateX(-11em);
     transition-delay: 0.5s; }
 
   #subRotaterWrapper3 .subBtn:nth-child(2) {
-    transform: rotate(180deg); }
+    transform: rotate(-22.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(2) .subBtnBtn {
     transition-delay: 0.25s; }
 
   .subActive3 .subBtn:nth-child(2) .subBtnBtn {
-    transform: translateX(-2.75em) translateY(-12.5em) rotate(-180deg);
+    transform: translateY(2em) rotate(22.5deg) translateX(-12em);
     transition-delay: 0.5s; }
 
   #subRotaterWrapper3 .subBtn:nth-child(3) {
-    transform: rotate(240deg); }
+    transform: rotate(-67.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(3) .subBtnBtn {
     transition-delay: 0.5s; }
 
   .subActive3 .subBtn:nth-child(3) .subBtnBtn {
-    transform: translateX(-2.75em) translateY(-12.5em) rotate(-240deg);
+    transform: translateY(24em) rotate(67.5deg) translateX(-27em);
+    transition-delay: 0.5s; }
+
+  #subRotaterWrapper3 .subBtn:nth-child(4) {
+    transform: rotate(-112.5deg); }
+
+  #subRotaterWrapper3 .subBtn:nth-child(4) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive3 .subBtn:nth-child(4) .subBtnBtn {
+    transform: translateY(-18em) rotate(112.5deg) translateX(22em);
+    transition-delay: 0.5s; }
+
+  #subRotaterWrapper3 .subBtn:nth-child(5) {
+    transform: rotate(-157.5deg); }
+
+  #subRotaterWrapper3 .subBtn:nth-child(5) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive3 .subBtn:nth-child(5) .subBtnBtn {
+    transform: translateY(0em) rotate(157.5deg) translateX(8em);
     transition-delay: 0.5s; }
 
   #methodology {
@@ -1625,18 +1916,6 @@ input[type="checkbox"] {
 	
   
 @media screen and (max-width: 768px) {
-	
-  h1 {
-    font-size: 125% !important; }
-
-  h2 {
-    font-size: 100% !important; }
-
-  h3 {
-    font-size: 75% !important; }
-
-  h4 {
-    font-size: 50% !important; }
 	
   .container, .container-double {
     margin: 0; }
@@ -1765,6 +2044,16 @@ input[type="checkbox"] {
     transform: translateY(-7.5em) rotate(112.5deg) translateX(-2em);
     transition-delay: 0.5s; }
 
+  #subRotaterWrapper1 .subBtn:nth-child(5) {
+    transform: rotate(-157.5deg); }
+
+  #subRotaterWrapper1 .subBtn:nth-child(5) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive1 .subBtn:nth-child(5) .subBtnBtn {
+    transform: translateY(-7.5em) rotate(157.5deg) translateX(-2em);
+    transition-delay: 0.5s; }
+
   /*Sub 5 elements for Business Advisor*/
   #subRotaterWrapper2 .subBtn:nth-child(1) {
     transform: rotate(-18deg); }
@@ -1818,33 +2107,53 @@ input[type="checkbox"] {
 
   /*Sub 3 elements for Strategic Advisor*/
   #subRotaterWrapper3 .subBtn:nth-child(1) {
-    transform: rotate(120deg); }
+    transform: rotate(22.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(1) .subBtnBtn {
     transition-delay: 0s; }
 
   .subActive3 .subBtn:nth-child(1) .subBtnBtn {
-    transform: translateX(-2.75em) translateY(-6em) rotate(-120deg);
+    transform: translateY(-3em) rotate(-22.5deg) translateX(-9em);
     transition-delay: 0.5s; }
 
   #subRotaterWrapper3 .subBtn:nth-child(2) {
-    transform: rotate(180deg); }
+    transform: rotate(-22.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(2) .subBtnBtn {
     transition-delay: 0.25s; }
 
   .subActive3 .subBtn:nth-child(2) .subBtnBtn {
-    transform: translateX(-0.8em) translateY(-8.5em) rotate(-180deg);
+    transform: translateY(3em) rotate(22.5deg) translateX(-10em);
     transition-delay: 0.5s; }
 
   #subRotaterWrapper3 .subBtn:nth-child(3) {
-    transform: rotate(240deg); }
+    transform: rotate(-67.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(3) .subBtnBtn {
     transition-delay: 0.5s; }
 
   .subActive3 .subBtn:nth-child(3) .subBtnBtn {
-    transform: translateX(0.05em) translateY(-8.25em) rotate(-240deg);
+    transform: translateY(20em) rotate(67.5deg) translateX(-23em);
+    transition-delay: 0.5s; }
+
+  #subRotaterWrapper3 .subBtn:nth-child(4) {
+    transform: rotate(-112.5deg); }
+
+  #subRotaterWrapper3 .subBtn:nth-child(4) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive3 .subBtn:nth-child(4) .subBtnBtn {
+    transform: translateY(-18em) rotate(112.5deg) translateX(18em);
+    transition-delay: 0.5s; }
+
+  #subRotaterWrapper3 .subBtn:nth-child(5) {
+    transform: rotate(-157.5deg); }
+
+  #subRotaterWrapper3 .subBtn:nth-child(5) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive3 .subBtn:nth-child(5) .subBtnBtn {
+    transform: translateY(-3em) rotate(157.5deg) translateX(6em);
     transition-delay: 0.5s; }
 	
   	.inner-text
@@ -1872,7 +2181,22 @@ input[type="checkbox"] {
 		height: 80vh;
 		overflow-x:hidden;
 	}
-	
+  
+  .optionCheckbox{
+    align-items: unset;
+  }
+
+  #hearAboutUs{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #hearAboutUsDropdownList{
+    width: 100%;
+    margin-left: 0px;
+    padding-left: .35em;
+  }
+
 	.radial {
     width: 4em;
     height: 4em;
@@ -1900,7 +2224,7 @@ input[type="checkbox"] {
 
   .subRotaterWrapper .subRotater .subBtnBtn .subBtnText {
     color: white;
-    font-size: 0.15em; }
+    font-size: 0.4em; }
 
   .rotater:nth-child(1) {
     transform: rotate(-60deg); }
@@ -1949,16 +2273,6 @@ input[type="checkbox"] {
 
   .subActive1 .subBtn:nth-child(3) .subBtnBtn {
     transform: translateY(-6.5em) rotate(120deg) translateX(-2em);
-    transition-delay: 0.5s; }
-
-  #subRotaterWrapper1 .subBtn:nth-child(4) {
-    transform: rotate(-180deg); }
-
-  #subRotaterWrapper1 .subBtn:nth-child(4) .subBtnBtn {
-    transition-delay: 0.75s; }
-
-  .subActive1 .subBtn:nth-child(4) .subBtnBtn {
-    transform: translateY(-5em) rotate(180deg) translateX(-2em);
     transition-delay: 0.5s; }
 
   /*Sub 5 elements for Business Advisor*/
@@ -2014,33 +2328,53 @@ input[type="checkbox"] {
 
   /*Sub 3 elements for Strategic Advisor*/
   #subRotaterWrapper3 .subBtn:nth-child(1) {
-    transform: rotate(60deg); }
+    transform: rotate(22.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(1) .subBtnBtn {
     transition-delay: 0s; }
 
   .subActive3 .subBtn:nth-child(1) .subBtnBtn {
-    transform: translateX(-1em) translateY(-4em) rotate(-60deg);
+    transform: translateY(-3em) rotate(-22.5deg) translateX(-8em);
     transition-delay: 0.5s; }
 
   #subRotaterWrapper3 .subBtn:nth-child(2) {
-    transform: rotate(150deg); }
+    transform: rotate(-22.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(2) .subBtnBtn {
     transition-delay: 0.25s; }
 
   .subActive3 .subBtn:nth-child(2) .subBtnBtn {
-    transform: translateX(0.2em) translateY(-7em) rotate(-150deg);
+    transform: translateY(3em) rotate(22.5deg) translateX(-10em);
     transition-delay: 0.5s; }
 
   #subRotaterWrapper3 .subBtn:nth-child(3) {
-    transform: rotate(220deg); }
+    transform: rotate(-67.5deg); }
 
   #subRotaterWrapper3 .subBtn:nth-child(3) .subBtnBtn {
     transition-delay: 0.5s; }
 
   .subActive3 .subBtn:nth-child(3) .subBtnBtn {
-    transform: translateX(0.5em) translateY(-8em) rotate(-220deg);
+    transform: translateY(20em) rotate(67.5deg) translateX(-23em);
+    transition-delay: 0.5s; }
+
+  #subRotaterWrapper3 .subBtn:nth-child(4) {
+    transform: rotate(-112.5deg); }
+
+  #subRotaterWrapper3 .subBtn:nth-child(4) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive3 .subBtn:nth-child(4) .subBtnBtn {
+    transform: translateY(-18em) rotate(112.5deg) translateX(18em);
+    transition-delay: 0.5s; }
+
+  #subRotaterWrapper3 .subBtn:nth-child(5) {
+    transform: rotate(-157.5deg); }
+
+  #subRotaterWrapper3 .subBtn:nth-child(5) .subBtnBtn {
+    transition-delay: 0.75s; }
+
+  .subActive3 .subBtn:nth-child(5) .subBtnBtn {
+    transform: translateY(-2em) rotate(157.5deg) translateX(4em);
     transition-delay: 0.5s; }
 	
 	.radial .btn.trigger:hover {
@@ -2059,14 +2393,21 @@ input[type="checkbox"] {
 	
 	#JobTitle
 	{
-		width: 98.5%;
+		width: 100%;
 		font-size: 1.25em;
-		height: 36px;
-	}
+    height: 36px;
+    padding-left: .35em;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  
+  #JobTitle option{
+    width: 100%;
+  }
 	
 	#FirstName
 	{
-		width: 98.5%;
+		width: 100%;
 	}
 	
 	.contactInfoRow
